@@ -6,20 +6,11 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
-public class CallStoresModel {
+public class CallStoresModelW {
 
     @Expose
     @SerializedName("restaurant_array")
-    private ArrayList restaurant_array;
-
-    @Expose
-    @SerializedName("restaurant_menus")
-    private ArrayList restaurant_menus;
-
-    @Expose
-    @SerializedName("restaurant_ratings")
-    private ArrayList restaurant_ratings;
-
+    private ArrayList<StoreW> restaurant_array;
 
     @SerializedName("success")
     private boolean success;
@@ -40,19 +31,12 @@ public class CallStoresModel {
         this.message = message;
     }
 
-    public ArrayList getRestaurant_array() {
+
+    public ArrayList<StoreW> getRestaurant_array() {
         return restaurant_array;
     }
 
-    public void setRestaurant_array(ArrayList restaurant_array) {this.restaurant_array = restaurant_array; }
-
-    public ArrayList getRestaurant_menus() {return restaurant_menus;}
-
-    public void setRestaurant_menus(ArrayList restaurant_menus) { this.restaurant_menus = restaurant_menus; }
-
-    public ArrayList getRestaurant_ratings() {
-        return restaurant_ratings;
+    public void setRestaurant_array(ArrayList<StoreW> restaurant_array) {
+        this.restaurant_array = restaurant_array;
     }
-
-    public void setRestaurant_ratings(ArrayList restaurant_ratings) {this.restaurant_ratings = restaurant_ratings; }
 }

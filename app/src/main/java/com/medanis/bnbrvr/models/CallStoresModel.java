@@ -30,15 +30,12 @@ public class CallStoresModel {
     public boolean isSuccess() {
         return success;
     }
-
     public void setSuccess(boolean success) {
         this.success = success;
     }
-
     public String getMessage() {
         return message;
     }
-
     public void setMessage(String message) {
         this.message = message;
     }
@@ -47,23 +44,15 @@ public class CallStoresModel {
         return restaurant_array;
     }
 
-    public void setRestaurant_array(ArrayList restaurant_array) {
-        this.restaurant_array = restaurant_array;
-    }
+    public void setRestaurant_array(ArrayList restaurant_array) {this.restaurant_array = restaurant_array; }
 
-    public ArrayList getRestaurant_menus() {
-        return restaurant_menus;
-    }
+    public ArrayList getRestaurant_menus() {return restaurant_menus;}
 
-    public void setRestaurant_menus(ArrayList restaurant_menus) {
-        this.restaurant_menus = restaurant_menus;
-    }
+    public void setRestaurant_menus(ArrayList restaurant_menus) { this.restaurant_menus = restaurant_menus; }
 
     public ArrayList getRestaurant_ratings() {
         return restaurant_ratings;
     }
 
-    public void setRestaurant_ratings(ArrayList restaurant_ratings) {
-        this.restaurant_ratings = restaurant_ratings;
-    }
+    public void setRestaurant_ratings(ArrayList restaurant_ratings) {this.restaurant_ratings = restaurant_ratings; }
 }

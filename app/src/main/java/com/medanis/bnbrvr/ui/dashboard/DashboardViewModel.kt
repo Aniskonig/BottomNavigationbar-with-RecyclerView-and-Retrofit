@@ -32,7 +32,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
                         storesMenusList: MutableList<MenusModel>,
                         storeRatingsList: MutableList<RatingsModel>
                 ) {
-//                Log.e("storesList", storesList.toString())
+
                     fullStoresList.clear()
                     for (i in 0 until storesList.size) {
                         var storeRating = 0.0

@@ -4,23 +4,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Usefragment.FragmentA">
+    tools:context=".MyFragments.FragmentA">
 
-    <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/operation"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Donneur" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="Receveur" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>
