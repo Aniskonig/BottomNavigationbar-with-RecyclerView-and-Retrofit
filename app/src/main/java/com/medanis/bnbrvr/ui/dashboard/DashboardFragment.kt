@@ -1,4 +1,4 @@
-package com.medanis.bnbrvr.ui.dashboard
+package com.medanis.bnbrvr.ui.dashboard;
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.medanis.bnbrvr.ui.dashboard
+package com.medanis.bnbrvr.ui.dashboard;
 
 import android.app.Application
 import androidx.lifecycle.*
@@ -25,7 +25,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
          */
 
         private val _getData = MutableLiveData<MutableList<FullStoresModel>>().apply {
-            getStoresDataByID(context, 19, object :
+            getStoresDataByID(context, 27, object :
                     CustomCallback {
                 override fun getStoreDataLists(
                         storesList: MutableList<StoresModel>,
