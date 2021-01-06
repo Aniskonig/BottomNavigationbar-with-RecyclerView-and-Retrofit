@@ -1,8 +1,9 @@
-package com.medanis.bnbrvr;
+package com.medanis.bnbrvr.activities;
 
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.medanis.bnbrvr.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/cardv"
+    android:gravity="center"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="2dp"
+    tools:targetApi="lollipop">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/itemDetailsIcon"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:contentDescription="@string/todo"
+                android:layout_alignBottom="@id/numberOfMenus"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_more_menu" />
+
+
+                <TextView
+                    android:id="@+id/storeName"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/storeImg"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/todo"
+                    android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/storeImg"
+                android:layout_width="match_parent"
+                android:layout_height="190sp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/ratingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/categoryTV"
+                android:layout_alignBottom="@id/categoryTV"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/todo"
+                android:textColor="#fff"
+                app:drawableEndCompat="@drawable/golden_star" />
+
+            <TextView
+                android:id="@+id/numberOfMenus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/storeName"
+                android:layout_alignEnd="@id/storeImg"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/itemDetailsIcon"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="@string/todo"
+                android:textColor="#000"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+
+            <TextView
+                android:id="@+id/categoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/storeImg"
+                android:layout_alignTop="@id/storeImg"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:padding="10dp"
+                android:text="@string/todo"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/frame_product"
+        android:contentDescription="@string/todo" />
+
+</FrameLayout>
